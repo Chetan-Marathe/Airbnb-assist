@@ -11,7 +11,7 @@ def search_airbnb(query):
    return f"## Airbnb Search Results\n\n{result}"
 
 demo = gr.Interface(
-   fn=search_airbnb,
+   fn=search_airbnb
    inputs=gr.Textbox(placeholder = "I want to book an apartment....."),
    outputs=gr.Markdown(),
    title="Airbnb Booking Assistant",
