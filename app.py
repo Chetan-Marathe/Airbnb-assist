@@ -2,7 +2,7 @@ from praisonaiagents import Agent , MCP
 import gradio as gr
 
 def search_airbnb(query):
-   agent = Agent(
+   agent = Agent(    
     instructions="""You help book apartment on Airbnb.""",
     llm="ollama/llama3.2",
     tools=MCP("npx -y @openbnb/mcp-server-airbnb --ignore-robots-txt")
